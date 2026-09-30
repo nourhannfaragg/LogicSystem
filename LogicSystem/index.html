@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>loginsystem</title>
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <div id="signupSection">
+      <h2>Sign Up</h2>
+      <input type="text" id="signupName" placeholder="Enter your name" />
+      <input type="email" id="signupEmail" placeholder="Enter your email" />
+      <input type="password" id="signupPassword" placeholder="Enter your password" />
+      <button onclick="registerUser()">Register</button>
+      <p>Already have an account? <a href="#" onclick="showLogin()">Login</a></p>
+    </div>
+
+
+    <div id="loginSection" class="hidden">
+      <h2>Login</h2>
+      <input type="email" id="loginEmail" placeholder="Enter your email" />
+      <input type="password" id="loginPassword" placeholder="Enter your password" />
+      <button onclick="loginUser()">Login</button>
+      <p>Don't have an account? <a href="#" onclick="showSignup()">Sign Up</a></p>
+    </div>
+
+
+
+    <div id="homeSection" class="hidden">
+      <h2 id="welcomeText"></h2>
+      <button onclick="logoutUser()">Logout</button>
+    </div>
+  </div>
+
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>
